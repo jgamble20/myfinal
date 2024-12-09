@@ -1,0 +1,154 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    color: black;
+    opacity: 0; 
+    animation: fadeIn 1.5s forwards; 
+}
+
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+header {
+    background-color: orange;
+    padding: 10px;
+    text-align: center;
+    animation: slideIn 1s ease-out;
+}
+
+@keyframes slideIn {
+    0% {
+        transform: translateY(-100%);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    opacity: 0; 
+    animation: fadeInNav 2s ease forwards;
+}
+
+nav ul li:nth-child(1) {
+    animation-delay: 0s;
+}
+nav ul li:nth-child(2) {
+    animation-delay: 0.3s;
+}
+nav ul li:nth-child(3) {
+    animation-delay: 0.6s;
+}
+nav ul li:nth-child(4) {
+    animation-delay: 0.9s;
+}
+
+
+@keyframes fadeInNav {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+
+footer {
+    background-color: orange;
+    text-align: center;
+    padding: 10px;
+    animation: slideInFooter 1s ease-out;
+}
+
+@keyframes slideInFooter {
+    0% {
+        transform: translateY(100%);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+
+.about-intro, .about-photography, .about-inspiration, .about-importance {
+    text-align: center;
+    margin-top: 40px;
+    animation: fadeInContent 2s ease-out;
+}
+
+@keyframes fadeInContent {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.about-title {
+    font-size: 2rem;
+    color: orange;
+}
+
+.about-description, .about-photography-description, .about-inspiration-description, .about-importance-description {
+    font-size: 1.1rem;
+    color: #333;
+    margin-top: 20px;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+@media (max-width: 1024px) {
+    .about-description, .about-photography-description, .about-inspiration-description, .about-importance-description {
+        width: 90%; 
+    }
+}
+
+@media (max-width: 768px) {
+    .about-intro,
+    .about-photography,
+    .about-inspiration,
+    .about-importance {
+        padding: 10px;
+    }
+
+    .about-description, .about-photography-description, .about-inspiration-description, .about-importance-description {
+        width: 100%; 
+    }
+}
+
+@media (max-width: 480px) {
+    nav ul {
+        display: block;
+    }
+
+    nav ul li {
+        margin-bottom: 10px;
+    }
+}

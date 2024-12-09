@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="photos.html">Photos</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section class="contact-info">
+            <h1 class="contact-title">Contact Me</h1>
+            <p class="contact-description">
+                Photography is not just about taking pictures; it's about telling stories. Through every photo I capture, there is a piece of my soul and a reflection of the world through my eyes. Each photo is a narrative, a moment frozen in time, a memory immortalized. Photography allows me to share what I see, what I feel, and what inspires me. I hope you see the beauty in my work, just as I have experienced it.
+            </p>
+        </section>
+
+        <section class="contact-form">
+            <h2>Get in Touch</h2>
+            <form action="submit_form.php" method="POST">
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Your Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Your Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Copyright Jeremy Gamble</p>
+    </footer>
+    
+    <script src="scriptc.js"></script>
+</body>
+</html>
